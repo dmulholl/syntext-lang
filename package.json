@@ -1,0 +1,42 @@
+{
+  "name": "syntext-lang",
+  "displayName": "Syntext Lang",
+  "description": "Syntax highlighting for the Syntext markup language",
+  "version": "0.1.0",
+  "publisher": "dmulholl",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmulholl/syntext-lang.git"
+  },
+  "homepage": "https://github.com/dmulholl/syntext-lang",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "syntext",
+        "aliases": [
+          "Syntext",
+          "syntext"
+        ],
+        "extensions": [
+          ".stx",
+          ".syntext"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "syntext",
+        "scopeName": "text.html.syntext",
+        "path": "./syntaxes/syntext.tmLanguage.json"
+      }
+    ]
+  }
+}
