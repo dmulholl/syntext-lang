@@ -64,6 +64,12 @@
 					"include": "#definition-list-term"
 				},
 				{
+					"include": "#tagged-code-block"
+				},
+				{
+					"include": "#tagged-raw-block"
+				},
+				{
 					"include": "#tagged-block"
 				},
 				{
@@ -73,6 +79,26 @@
 					"include": "#paragraph"
 				}
 			]
+		},
+		"tagged-code-block": {
+			"begin": "(^|\\G)(\\s*):{3}\\s+code.*$",
+			"name": "markup.tagged_code_block.syntext",
+			"while": "(^|\\G)(\\n|(\\2\\s+.*$))",
+			"beginCaptures": {
+				"0": {
+					"name": "meta.preprocessor.syntext"
+				}
+			}
+		},
+		"tagged-raw-block": {
+			"begin": "(^|\\G)(\\s*):{3}\\s+(raw|comment).*$",
+			"name": "markup.tagged_raw_block.syntext",
+			"while": "(^|\\G)(\\n|(\\2\\s+.*$))",
+			"beginCaptures": {
+				"0": {
+					"name": "meta.preprocessor.syntext"
+				}
+			}
 		},
 		"heading": {
 			"match": "(?:^|\\G)[ ]{0,3}(#{1,6}\\s+(.*?)(\\s+#{1,6})?\\s*)$",
