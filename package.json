@@ -2,9 +2,9 @@
   "name": "syntext-lang",
   "displayName": "Syntext Lang",
   "description": "Syntax highlighting for the Syntext markup language",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "dmulholl",
-  "license": "0BSD",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/dmulholl/syntext-lang.git"
